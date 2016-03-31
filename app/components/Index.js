@@ -1,10 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router';
+import Body from './Body';
+import Footer from './Footer';
+import Header from './Header';
+import './Index.scss';
 
 export default () => (
   <div className="index">
-    <h1>This is the index</h1>
-    <Link to="/foo">Foo</Link><br />
-    <Link to="/bar">Bar</Link>
+    <Header color="#FEFEFE">
+      This is the header of the index page.
+    </Header>
+    <Body>
+      This is the body.
+    </Body>
+    <Footer>
+      This is the footer.
+    </Footer>
   </div>
 );

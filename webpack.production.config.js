@@ -37,20 +37,23 @@ module.exports = {
     }),
   ],
   module: {
-    loaders: [{
-      test: /\.js?$/,
-      exclude: /node_modules/,
-      loader: 'babel',
-      query: {
-        presets: ['es2015', 'stage-1', 'react'],
+    loaders: [
+      {
+        test: /\.js?$/,
+        exclude: /node_modules/,
+        loader: 'babel',
+        query: {
+          presets: ['es2015', 'stage-1', 'react'],
+        },
+      }, {
+        test: /\.json?$/,
+        loader: 'json',
+      }, {
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract('style', 'css?modules&localIdentName=[name]---[local]---[hash:base64:5]!postcss'),
       },
-    }, {
-      test: /\.json?$/,
-      loader: 'json',
-    }, {
-      test: /\.css$/,
-      loader: ExtractTextPlugin.extract('style', 'css?modules&localIdentName=[name]---[local]---[hash:base64:5]!postcss'),
-    },],
+      { test: /\.scss$/, loaders: ['style', 'css', 'postcss', 'sass'] },
+    ],
   },
   postcss: [
     require('autoprefixer'),
