@@ -5,18 +5,14 @@ import Header from './Header';
 import './Index.scss';
 import {
   Code,
-  CustomerQuote, CustomerQuotes,
-  DropdownMenu, DropdownToggle,
   Footer, FooterAddress,
   Hero,
   HorizontalSplit,
   ImageList, ImageListItem,
   Navbar, NavItem,
   Page,
-  PricingPlan, PricingTable,
   Section,
   SignupInline, SignupModal,
-  Stripe,
   Team,
   TeamMember,
 } from "neal-react";
