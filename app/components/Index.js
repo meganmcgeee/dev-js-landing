@@ -38,8 +38,12 @@ export default () => (
     <Body>
       This is the body.
     </Body>
-    <Footer>
-      This is the footer.
+    <Footer brandName={brandName}
+      facebookUrl="http://www.facebook.com/"
+      twitterUrl="http://www.twitter.com/"
+      githubUrl="https://github.com/dennybritz/neal-react"
+      address={businessAddress}>
     </Footer>
+
   </div>
 );
