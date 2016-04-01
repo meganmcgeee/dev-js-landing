@@ -2,7 +2,9 @@ import React from 'react';
 import Body from './Body';
 import Footer from './Footer';
 import Header from './Header';
+import { App } from 'neal-react';
 import './Index.scss';
+
 
 export default () => (
   <div className="index">
