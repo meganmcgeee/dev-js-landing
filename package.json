@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "babel-cli": "^6.4.0",
+    "neal-react": "^0.2.5",
     "ramda": "^0.19.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
