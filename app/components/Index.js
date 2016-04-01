@@ -3,11 +3,29 @@ import Body from './Body';
 import Footer from './Footer';
 import Header from './Header';
 import './Index.scss';
+import {
+  Code,
+  CustomerQuote, CustomerQuotes,
+  DropdownMenu, DropdownToggle,
+  Footer, FooterAddress,
+  Hero,
+  HorizontalSplit,
+  ImageList, ImageListItem,
+  Navbar, NavItem,
+  Page,
+  PricingPlan, PricingTable,
+  Section,
+  SignupInline, SignupModal,
+  Stripe,
+  Team,
+  TeamMember,
+} from "neal-react";
+
 
 export default () => (
   <div className="index">
-    <Header color="#FEFEFE">
-      This is the header of the index page.
+    <Header>
+      dev.js
     </Header>
     <Body>
       This is the body.
