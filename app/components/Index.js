@@ -1,6 +1,5 @@
 import React from 'react';
 import Body from './Body';
-import Footer from './Footer';
 import Header from './Header';
 import './Index.scss';
 import {
@@ -17,11 +16,24 @@ import {
   TeamMember,
 } from "neal-react";
 
+//Specify the company brand
+const brandName = "dev.js";
+const brand = <span>{brandName}</span>;
+
+//Specify company address
+const businessAddress = (
+  <address>
+    <strong>{brandName}</strong><br/>
+    735 S. Saint Andrews Pl<br/>
+    Los Angeles, CA 90005<br/>
+    +1 213 555 5555
+  </address>
+);
 
 export default () => (
   <div className="index">
     <Header>
-      dev.js
+      <p>dev.js</p>
     </Header>
     <Body>
       This is the body.
