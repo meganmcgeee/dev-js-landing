@@ -51,6 +51,7 @@ module.exports = {
       },
       { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' },
       { test: /\.scss$/, loaders: ['style', 'css', 'postcss', 'sass'] },
+      { test: /\.svg$/, loader: 'svg-loader?pngScale=2' },
     ],
   },
 };
