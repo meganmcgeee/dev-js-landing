@@ -7,6 +7,7 @@ import {
   ImageList, ImageListItem,
   Navbar, NavItem,
   Page,
+  Subhero,
   Section,
   SignupInline, SignupModal,
   Team,
@@ -46,7 +47,7 @@ export default () => (
       </Hero>
 
       <Body>
-        This is the body.
+
       </Body>
       <Footer
         address={businessAddress}
