@@ -37,19 +37,17 @@ export default () => (
         dev.js
       </Navbar>
 
-      <Hero backgroundImage={heroImg}>
+      <Hero backgroundColor="#FFF">
         <h1 className="display-4">
           Dev.js crafts minimal viable products and integrations with the latest Javascript technologies.
         </h1>
       </Hero>
 
       <Section className="subhero">
-        <div className="container">
-          <ImageList centered={true}>
-            <ImageListItem src={compLogo1} url="http://www.learntomooch.com" />
-            <ImageListItem src={compLogo2} url="http://airlugg.com/" />
-          </ImageList>
-        </div>
+        <ImageList centered={true}>
+          <ImageListItem src={compLogo1} url="http://www.learntomooch.com" />
+          <ImageListItem src={compLogo2} url="http://airlugg.com/" />
+        </ImageList>
       </Section>
 
       <Section>
