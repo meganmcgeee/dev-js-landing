@@ -47,7 +47,9 @@ module.exports = {
         query: {
           presets: ['es2015', 'stage-1', 'react'],
         },
-      }, {
+      },
+      { test: /\.tsx?$/, exclude: /node_modules/, loader: 'ts-loader' },
+      {
         test: /\.json?$/,
         loader: 'json',
       }, {

@@ -39,10 +39,13 @@ module.exports = {
         query: {
           presets: ['react', 'es2015', 'stage-1', 'react-hmre'],
         },
-      }, {
+      },
+      { test: /\.tsx?$/, exclude: /node_modules/, loader: 'ts-loader' },
+      {
         test: /\.json?$/,
         loader: 'json',
-      }, {
+      },
+      {
         test: /\.css$/,
         loader: 'style!css?modules&localIdentName=[name]---[local]---[hash:base64:5]',
       },
