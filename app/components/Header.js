@@ -1,8 +1,8 @@
 import React, { PropTypes } from 'react';
 
-const Header = ({ children, color }) => (
+const Header = ({ children }) => (
   <header className="header">
-    <h1 style={{ color }}>{children}</h1>
+    <p>{children}</p>
   </header>
 );
 

@@ -32,18 +32,22 @@ const businessAddress = (
 
 export default () => (
   <div className="index">
-    <Header>
-      <p>dev.js</p>
-    </Header>
-    <Body>
-      This is the body.
-    </Body>
-    <Footer brandName={brandName}
-      facebookUrl="http://www.facebook.com/"
-      twitterUrl="http://www.twitter.com/"
-      githubUrl="https://github.com/dennybritz/neal-react"
-      address={businessAddress}>
-    </Footer>
+    <Page>
 
+      <Header>
+        dev.js
+      </Header>
+
+      <Hero backgroundImage="hero-bg-01.jpg">
+          <h1 className="display-4"> Dev.js crafts minimal viable products and integrations with the latest Javascript technologies. </h1>
+      </Hero>
+
+      <Body>
+        This is the body.
+      </Body>
+      <Footer brandName={brandName}
+        address={businessAddress}>
+      </Footer>
+    </Page>
   </div>
 );
