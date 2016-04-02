@@ -1,9 +1,7 @@
 import React from 'react';
 import {
-  Code,
-  Footer, FooterAddress,
+  Footer,
   Hero,
-  HorizontalSplit,
   ImageList, ImageListItem,
   Navbar, NavItem,
   Page,
@@ -12,9 +10,10 @@ import {
   Team,
   TeamMember,
 } from 'neal-react';
-import Body from './Body';
-import Header from './Header';
 import heroImg from '../../public/img/hero-bg-01.jpg';
+import megImg from '../../public/img/people/megan.jpg'
+import compLogo1 from '../../public/img/clients/mooch.jpg'
+import compLogo2 from '../../public/img/clients/airlugg.png'
 import './Index.scss';
 
 // Specify the company brand
@@ -35,9 +34,9 @@ export default () => (
   <div className="index">
     <Page>
 
-      <Header>
+      <Navbar>
         dev.js
-      </Header>
+      </Navbar>
 
       <Hero backgroundImage={heroImg}>
         <h1 className="display-4">
@@ -46,19 +45,20 @@ export default () => (
       </Hero>
 
       <Section className="subhero">
-        <ImageList centered>
-          <ImageListItem src="img/press/cnn-logo.png" url="http://www.cnn.com"/>
-          <ImageListItem src="img/press/forbes-logo.png" url="http://forbes.com/"/>
-          <ImageListItem src="img/press/theverge-logo.png" url="http://www.theverge.com/"/>
-        </ImageList>
+        <div className="container">
+          <ImageList centered>
+            <ImageListItem src={compLogo1} url="http://www.learntomooch.com"/>
+            <ImageListItem src={compLogo2} url="http://airlugg.com/"/>
+          </ImageList>
+        </div>
       </Section>
 
       <Section>
-       <Team>
-         <TeamMember name="Matthew Jesuele" title="Co-founder" imageUrl="img/people/grumpycat.jpg">
+       <Team centered>
+         <TeamMember name="Matthew Jesuele" title="Co-founder" imageUrl={megImg}>
          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
          </TeamMember>
-         <TeamMember name="Megan McGee" title="Co-founder" imageUrl="img/people/boo.jpg">
+         <TeamMember name="Megan McGee" title="Co-founder" imageUrl={megImg}>
          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
          </TeamMember>
        </Team>
