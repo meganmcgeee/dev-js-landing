@@ -30,6 +30,8 @@ module.exports = {
   ],
   module: {
     loaders: [
+      { test: require.resolve('jquery'), loader: 'expose?jQuery!expose?$' },
+      { test: require.resolve('tether'), loader: 'expose?Tether' },
       {
         test: /\.js?$/,
         exclude: /node_modules/,
