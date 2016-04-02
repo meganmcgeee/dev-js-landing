@@ -10,8 +10,8 @@ import {
   Team,
   TeamMember,
 } from 'neal-react';
-import heroImg from '../../public/img/hero-bg-01.jpg';
-import megImg from '../../public/img/people/megan.jpg'
+import heroImg from '../../public/img/hero-bg-01.png';
+import megImg from '../../public/img/people/megan.png'
 import compLogo1 from '../../public/img/clients/mooch.jpg'
 import compLogo2 from '../../public/img/clients/airlugg.png'
 import './Index.scss';
