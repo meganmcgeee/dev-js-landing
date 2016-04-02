@@ -45,6 +45,15 @@ export default () => (
         </h1>
       </Hero>
 
+      <Section className="subhero">
+        <ImageList centered>
+          <ImageListItem src="img/press/cnn-logo.png" url="http://www.cnn.com"/>
+          <ImageListItem src="img/press/forbes-logo.png" url="http://forbes.com/"/>
+          <ImageListItem src="img/press/theverge-logo.png" url="http://www.theverge.com/"/>
+          <ImageListItem src="img/press/techcrunch-logo.jpg" url="http://techcrunch.com/"/>
+        </ImageList>
+      </Section>
+
       <Section>
        <Team>
          <TeamMember name="Member 1" title="Co-founder" imageUrl="img/people/grumpycat.jpg">
