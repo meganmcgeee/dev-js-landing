@@ -12,6 +12,7 @@ import {
 } from 'neal-react';
 import heroImg from '../../public/img/hero-bg-01.png';
 import megImg from '../../public/img/people/megan.png'
+import mattImg from '../../public/img/people/matt.jpg'
 import compLogo1 from '../../public/img/clients/mooch.jpg'
 import compLogo2 from '../../public/img/clients/airlugg.png'
 import './Index.scss';
@@ -47,18 +48,18 @@ export default () => (
       <Section className="subhero">
         <div className="container">
           <ImageList centered>
-            <ImageListItem src={compLogo1} url="http://www.learntomooch.com"/>
-            <ImageListItem src={compLogo2} url="http://airlugg.com/"/>
+            <ImageListItem responsive src={compLogo1} url="http://www.learntomooch.com" />
+            <ImageListItem responsive src={compLogo2} url="http://airlugg.com/" />
           </ImageList>
         </div>
       </Section>
 
       <Section>
-       <Team centered>
-         <TeamMember name="Matthew Jesuele" title="Co-founder" imageUrl={megImg}>
+       <Team>
+         <TeamMember name="Matthew Jesuele" title="Head Honcho" imageUrl={mattImg}>
          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
          </TeamMember>
-         <TeamMember name="Megan McGee" title="Co-founder" imageUrl={megImg}>
+         <TeamMember name="Megan McGee" title="Head Honcho with Vagina" imageUrl={megImg}>
          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
          </TeamMember>
        </Team>

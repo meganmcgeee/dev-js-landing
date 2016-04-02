@@ -12,7 +12,6 @@ html {
 
 .footer,
 .header {
-  border-bottom: black;
   width: 100%;
 
   h1 {
@@ -23,4 +22,8 @@ html {
 .footer {
   bottom: 0;
   position: absolute;
+}
+
+.subhero{
+  background-repeat: no-repeat;
 }
