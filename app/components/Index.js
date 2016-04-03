@@ -10,7 +10,6 @@ import {
   Team,
   TeamMember,
 } from 'neal-react';
-import heroImg from '../../public/img/hero-bg-01.png';
 import megImg from '../../public/img/people/megan.png';
 import compLogo1 from '../../public/img/clients/mooch.jpg';
 import compLogo2 from '../../public/img/clients/airlugg.png';
@@ -37,7 +36,7 @@ export default () => (
         dev.js
       </Navbar>
 
-      <Hero backgroundColor="#FFF">
+      <Hero>
         <h1 className="display-4">
           Dev.js crafts minimal viable products and integrations with the latest Javascript technologies.
         </h1>
