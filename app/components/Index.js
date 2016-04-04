@@ -2,17 +2,14 @@ import React from 'react';
 import {
   Footer,
   Hero,
-  ImageList, ImageListItem,
-  Navbar, NavItem,
+  Navbar,
   Page,
   Section,
-  SignupInline, SignupModal,
+  // SignupInline, SignupModal,
   Team,
   TeamMember,
 } from 'neal-react';
 import megImg from '../../public/img/people/megan.png';
-import compLogo1 from '../../public/img/clients/mooch.jpg';
-import compLogo2 from '../../public/img/clients/airlugg.png';
 import './Index.scss';
 
 // Specify the company brand
@@ -38,24 +35,22 @@ export default () => (
 
       <Hero>
         <h1 className="display-4">
-          Dev.js crafts minimal viable products and integrations with the latest Javascript technologies.
+          Dev.js crafts minimal viable products and integrations with the latest
+          Javascript technologies.
         </h1>
       </Hero>
-
-      <Section className="subhero">
-        <ImageList centered={true}>
-          <ImageListItem src={compLogo1} url="http://www.learntomooch.com" />
-          <ImageListItem src={compLogo2} url="http://airlugg.com/" />
-        </ImageList>
-      </Section>
 
       <Section>
        <Team centered={true}>
          <TeamMember imageUrl={megImg} name="Matthew Jesuele" title="Co-founder">
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
          </TeamMember>
          <TeamMember imageUrl={megImg} name="Megan McGee" title="Co-founder">
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
          </TeamMember>
        </Team>
      </Section>
