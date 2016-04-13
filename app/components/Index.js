@@ -5,15 +5,13 @@ import {
   Navbar,
   Page,
   Section,
-  // SignupInline, SignupModal,
   Team,
   TeamMember,
 } from 'neal-react';
-import megImg from '../../public/img/people/megan.png';
 import './Index.scss';
 
 // Specify the company brand
-const brandName = 'dev.js';
+const brandName = '{dev.js}';
 
 // Specify company address
 const businessAddress = (
@@ -30,35 +28,34 @@ export default () => (
     <Page>
 
       <Navbar>
-        dev.js
+        {"{dev.js}"}
       </Navbar>
 
       <Hero>
         <h1 className="display-4">
-          Dev.js crafts minimal viable products and integrations with the latest
+          Dev.js crafts chatbots, and RESTful APIs with the latest
           Javascript technologies.
         </h1>
       </Hero>
 
       <Section>
-       <Team centered={true}>
-         <TeamMember imageUrl={megImg} name="Matthew Jesuele" title="Co-founder">
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+       <Team>
+         <TeamMember name="Matthew Jesuele" title="Co-founder">
+         Fullstack React.js specialist with a pechant for functional prgramming
+         paradigms and a nose for technologies on the horizon. In his spare time,
+         he raps and studies cities.
          </TeamMember>
-         <TeamMember imageUrl={megImg} name="Megan McGee" title="Co-founder">
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+         <TeamMember name="Boye Fanjimi" title="Co-founder">
+         abcd ajkhjke. IOHOIJnwna auhwenajfoiaenoinwd3oir nfoawnfow eao wufi onwapi3 roiw nfoiwne.
+         abcd ajkhjke. IOHOIJnwna auhwenajfoiaenoinwd3oir nfoawnfow eao wufi onwapi3 roiw nfoiwne.
+         </TeamMember>
+         <TeamMember name="Megan McGee" title="Co-founder">
+        Front-end React specialist and self-identified technofeminist who is all about API building
+        and building relationships/promoting female-owned start-ups. Talk to her about your business or idea.
          </TeamMember>
        </Team>
      </Section>
-
-      <Footer
-        address={businessAddress}
-        brandName={brandName}
-      />
+      <Section className="subhero" />
     </Page>
   </div>
 );
